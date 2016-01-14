@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2C911C31C479D8E00516C7F /* ConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911C21C479D8E00516C7F /* ConsoleViewController.m */; };
 		C2C9C6A11C4668340031F2DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A01C4668340031F2DD /* main.m */; };
 		C2C9C6A41C4668340031F2DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A31C4668340031F2DD /* AppDelegate.m */; };
 		C2C9C6A71C4668340031F2DD /* Emerald.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A51C4668340031F2DD /* Emerald.xcdatamodeld */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2C911C11C479D8E00516C7F /* ConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleViewController.h; sourceTree = "<group>"; };
+		C2C911C21C479D8E00516C7F /* ConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleViewController.m; sourceTree = "<group>"; };
 		C2C9C69B1C4668340031F2DD /* Emerald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emerald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C9C69F1C4668340031F2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C9C6A01C4668340031F2DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 		C2C9C69D1C4668340031F2DD /* Emerald */ = {
 			isa = PBXGroup;
 			children = (
+				C2C911C11C479D8E00516C7F /* ConsoleViewController.h */,
+				C2C911C21C479D8E00516C7F /* ConsoleViewController.m */,
 				C2C9C6A21C4668340031F2DD /* AppDelegate.h */,
 				C2C9C6A31C4668340031F2DD /* AppDelegate.m */,
 				C2C9C6A81C4668340031F2DD /* ViewController.h */,
@@ -224,6 +229,7 @@
 			files = (
 				C2C9C6A41C4668340031F2DD /* AppDelegate.m in Sources */,
 				C2C9C6A11C4668340031F2DD /* main.m in Sources */,
+				C2C911C31C479D8E00516C7F /* ConsoleViewController.m in Sources */,
 				C2C9C6AA1C4668340031F2DD /* ViewController.m in Sources */,
 				C2C9C6A71C4668340031F2DD /* Emerald.xcdatamodeld in Sources */,
 			);
@@ -424,6 +430,7 @@
 				C2C9C6C31C4668340031F2DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2C9C6C41C4668340031F2DD /* Build configuration list for PBXNativeTarget "EmeraldTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				C2C9C6C61C4668340031F2DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
