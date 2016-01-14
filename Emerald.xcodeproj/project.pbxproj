@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C2C911C31C479D8E00516C7F /* ConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911C21C479D8E00516C7F /* ConsoleViewController.m */; };
+		C2C911C61C47A14300516C7F /* Console.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911C51C47A14300516C7F /* Console.m */; };
+		C2C911C91C47AF3A00516C7F /* EmeraldRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911C81C47AF3A00516C7F /* EmeraldRunner.m */; };
+		C2C911D01C47B86700516C7F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911CF1C47B86700516C7F /* MainViewController.m */; };
 		C2C9C6A11C4668340031F2DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A01C4668340031F2DD /* main.m */; };
 		C2C9C6A41C4668340031F2DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A31C4668340031F2DD /* AppDelegate.m */; };
 		C2C9C6A71C4668340031F2DD /* Emerald.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A51C4668340031F2DD /* Emerald.xcdatamodeld */; };
-		C2C9C6AA1C4668340031F2DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A91C4668340031F2DD /* ViewController.m */; };
 		C2C9C6AD1C4668340031F2DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C9C6AB1C4668340031F2DD /* Main.storyboard */; };
 		C2C9C6AF1C4668340031F2DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C9C6AE1C4668340031F2DD /* Images.xcassets */; };
 		C2C9C6B21C4668340031F2DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C9C6B01C4668340031F2DD /* LaunchScreen.xib */; };
@@ -31,14 +33,19 @@
 /* Begin PBXFileReference section */
 		C2C911C11C479D8E00516C7F /* ConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleViewController.h; sourceTree = "<group>"; };
 		C2C911C21C479D8E00516C7F /* ConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleViewController.m; sourceTree = "<group>"; };
+		C2C911C41C47A14300516C7F /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
+		C2C911C51C47A14300516C7F /* Console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Console.m; sourceTree = "<group>"; };
+		C2C911C71C47AF3A00516C7F /* EmeraldRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmeraldRunner.h; sourceTree = "<group>"; };
+		C2C911C81C47AF3A00516C7F /* EmeraldRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmeraldRunner.m; sourceTree = "<group>"; };
+		C2C911CA1C47AFEC00516C7F /* NSTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		C2C911CE1C47B86700516C7F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C2C911CF1C47B86700516C7F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C2C9C69B1C4668340031F2DD /* Emerald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emerald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C9C69F1C4668340031F2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C9C6A01C4668340031F2DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2C9C6A21C4668340031F2DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2C9C6A31C4668340031F2DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2C9C6A61C4668340031F2DD /* Emerald.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Emerald.xcdatamodel; sourceTree = "<group>"; };
-		C2C9C6A81C4668340031F2DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C2C9C6A91C4668340031F2DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C2C9C6AC1C4668340031F2DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2C9C6AE1C4668340031F2DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2C9C6B11C4668340031F2DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,12 +93,17 @@
 		C2C9C69D1C4668340031F2DD /* Emerald */ = {
 			isa = PBXGroup;
 			children = (
+				C2C911CE1C47B86700516C7F /* MainViewController.h */,
+				C2C911CF1C47B86700516C7F /* MainViewController.m */,
+				C2C911CA1C47AFEC00516C7F /* NSTask.h */,
+				C2C911C71C47AF3A00516C7F /* EmeraldRunner.h */,
+				C2C911C81C47AF3A00516C7F /* EmeraldRunner.m */,
+				C2C911C41C47A14300516C7F /* Console.h */,
+				C2C911C51C47A14300516C7F /* Console.m */,
 				C2C911C11C479D8E00516C7F /* ConsoleViewController.h */,
 				C2C911C21C479D8E00516C7F /* ConsoleViewController.m */,
 				C2C9C6A21C4668340031F2DD /* AppDelegate.h */,
 				C2C9C6A31C4668340031F2DD /* AppDelegate.m */,
-				C2C9C6A81C4668340031F2DD /* ViewController.h */,
-				C2C9C6A91C4668340031F2DD /* ViewController.m */,
 				C2C9C6AB1C4668340031F2DD /* Main.storyboard */,
 				C2C9C6AE1C4668340031F2DD /* Images.xcassets */,
 				C2C9C6B01C4668340031F2DD /* LaunchScreen.xib */,
@@ -228,9 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2C9C6A41C4668340031F2DD /* AppDelegate.m in Sources */,
+				C2C911C61C47A14300516C7F /* Console.m in Sources */,
 				C2C9C6A11C4668340031F2DD /* main.m in Sources */,
+				C2C911C91C47AF3A00516C7F /* EmeraldRunner.m in Sources */,
+				C2C911D01C47B86700516C7F /* MainViewController.m in Sources */,
 				C2C911C31C479D8E00516C7F /* ConsoleViewController.m in Sources */,
-				C2C9C6AA1C4668340031F2DD /* ViewController.m in Sources */,
 				C2C9C6A71C4668340031F2DD /* Emerald.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
