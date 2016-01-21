@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Console : UITextView
+@interface Console : UITextView 
 - (void)append:(NSString *)text;
--(void)clear;
+- (void)clear;
 @end

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ConsoleViewController : UIViewController
+@property NSArray *connectionInfo;
+@property NSString *program;
 -(void) notifiedForOutput: (NSNotification *)notified;
 @end

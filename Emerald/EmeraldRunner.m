@@ -16,16 +16,24 @@
 @property NSPipe *inputPipe;
 @property NSPipe *outputPipe;
 @property NSTask *task;
+@property NSString *program;
 @end
 
 @implementation EmeraldRunner
-- (void)initalize:(NSString *)host portNumber:(NSString *)port callbackObject:(ConsoleViewController *)callback{
+- (void)initalize:(NSString *)host portNumber:(NSString *)port callbackObject:(ConsoleViewController *)callback program:(NSString*)program {
     
     // Create host:port string
     if(host.length != 0 || port.length != 0) {
         self.hostPort = [NSString stringWithFormat:@"%@:%@", host, port];
     } else {
         self.hostPort = @"";
+    }
+    
+    // Set program
+    if(program == nil) {
+        self.program = @"";
+    } else {
+        self.program = program;
     }
     
     // Initalize pipes
@@ -47,9 +55,17 @@
     self.task.launchPath = @"/bin/emx";
     
     // Set arguments
-    [self.task setArguments:[NSArray arrayWithObjects:@"-U",
-                             [NSString stringWithFormat:@"-R%@", self.hostPort],
-                             nil]];
+    if(![self.program  isEqual: @""]) {
+        [self.task setArguments:[NSArray arrayWithObjects:@"-U",
+                                 [NSString stringWithFormat:@"-R%@", self.hostPort],
+                                 [NSString stringWithFormat:@"%@", self.program],
+                                 nil]];
+    } else {
+        [self.task setArguments:[NSArray arrayWithObjects:@"-U",
+                                 [NSString stringWithFormat:@"-R%@", self.hostPort],
+                                 nil]];
+    }
+
     
     // Notify callback when there is data in pipe
     [self.output readInBackgroundAndNotify];
@@ -64,6 +80,8 @@
 }
 
 - (void) stop {
-    [self.task interrupt];
+    // Kill the current session
+    kill([self.task processIdentifier], SIGTERM);
+    [self.task waitUntilExit];
 }
 @end

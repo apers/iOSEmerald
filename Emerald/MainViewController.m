@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 
 @interface MainViewController ()
-
+- (IBAction)returnToMain:(UIStoryboardSegue *)segue;
 @end
 
 @implementation MainViewController
@@ -30,6 +30,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)returnToMain:(UIStoryboardSegue *)segue {
 }
 
 /*

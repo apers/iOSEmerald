@@ -10,12 +10,14 @@
 
 @implementation Console
 - (void)write:(NSString *)text {
+    //self.clearsContextBeforeDrawing = YES;
     // To avoid resetting text formatting and losing text color
     if (![self isSelectable]) {
         self.selectable = YES;
     }
+    
+    // Disable self scroll and set text
     self.text = text;
-
     // To avoid resetting text formatting and losing text color
     if (![self isSelectable]) {
         self.selectable = NO;
@@ -30,6 +32,12 @@
 - (void)clear {
     [self write:@""];
 }
+
+- (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated {
+    NSLog(@"Scroll");
+    [super scrollRectToVisible: rect animated: NO];
+}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

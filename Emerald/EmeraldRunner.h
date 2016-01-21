@@ -10,7 +10,7 @@
 #import "ConsoleViewController.h"
 
 @interface EmeraldRunner : NSObject
-- (void)initalize:(NSString *)host portNumber:(NSString *)port callbackObject:(ConsoleViewController *)callback;
+- (void)initalize:(NSString *)host portNumber:(NSString *)port callbackObject:(ConsoleViewController *)callback program:(NSString *)program;
 - (void)run;
 - (void)stop;
 @property NSFileHandle *output;
