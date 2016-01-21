@@ -11,6 +11,12 @@
 		C2C911C61C47A14300516C7F /* Console.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911C51C47A14300516C7F /* Console.m */; };
 		C2C911C91C47AF3A00516C7F /* EmeraldRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911C81C47AF3A00516C7F /* EmeraldRunner.m */; };
 		C2C911D01C47B86700516C7F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911CF1C47B86700516C7F /* MainViewController.m */; };
+		C2C911D31C48FC2B00516C7F /* ConnectionInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911D21C48FC2B00516C7F /* ConnectionInfoViewController.m */; };
+		C2C911D61C4CF01A00516C7F /* CompilerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911D51C4CF01A00516C7F /* CompilerTableViewController.m */; };
+		C2C911DB1C4D15BE00516C7F /* CompileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C911DA1C4D15BE00516C7F /* CompileCell.xib */; };
+		C2C911DE1C4D170300516C7F /* CompileCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911DD1C4D170300516C7F /* CompileCellTableViewCell.m */; };
+		C2C911E61C4F9D4000516C7F /* ChooseProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911E51C4F9D4000516C7F /* ChooseProgramViewController.m */; };
+		C2C911E91C4F9E1300516C7F /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C911E81C4F9E1300516C7F /* Utilities.m */; };
 		C2C9C6A11C4668340031F2DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A01C4668340031F2DD /* main.m */; };
 		C2C9C6A41C4668340031F2DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A31C4668340031F2DD /* AppDelegate.m */; };
 		C2C9C6A71C4668340031F2DD /* Emerald.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2C9C6A51C4668340031F2DD /* Emerald.xcdatamodeld */; };
@@ -40,6 +46,17 @@
 		C2C911CA1C47AFEC00516C7F /* NSTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
 		C2C911CE1C47B86700516C7F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C2C911CF1C47B86700516C7F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C2C911D11C48FC2B00516C7F /* ConnectionInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionInfoViewController.h; sourceTree = "<group>"; };
+		C2C911D21C48FC2B00516C7F /* ConnectionInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionInfoViewController.m; sourceTree = "<group>"; };
+		C2C911D41C4CF01A00516C7F /* CompilerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompilerTableViewController.h; sourceTree = "<group>"; };
+		C2C911D51C4CF01A00516C7F /* CompilerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompilerTableViewController.m; sourceTree = "<group>"; };
+		C2C911DA1C4D15BE00516C7F /* CompileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompileCell.xib; sourceTree = "<group>"; };
+		C2C911DC1C4D170300516C7F /* CompileCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompileCellTableViewCell.h; sourceTree = "<group>"; };
+		C2C911DD1C4D170300516C7F /* CompileCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompileCellTableViewCell.m; sourceTree = "<group>"; };
+		C2C911E41C4F9D4000516C7F /* ChooseProgramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseProgramViewController.h; sourceTree = "<group>"; };
+		C2C911E51C4F9D4000516C7F /* ChooseProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseProgramViewController.m; sourceTree = "<group>"; };
+		C2C911E71C4F9E1300516C7F /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		C2C911E81C4F9E1300516C7F /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		C2C9C69B1C4668340031F2DD /* Emerald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emerald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C9C69F1C4668340031F2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C9C6A01C4668340031F2DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +89,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2C911DF1C4D170E00516C7F /* CompileView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C911D41C4CF01A00516C7F /* CompilerTableViewController.h */,
+				C2C911D51C4CF01A00516C7F /* CompilerTableViewController.m */,
+				C2C911DC1C4D170300516C7F /* CompileCellTableViewCell.h */,
+				C2C911DD1C4D170300516C7F /* CompileCellTableViewCell.m */,
+			);
+			name = CompileView;
+			sourceTree = "<group>";
+		};
+		C2C911E01C4F9CBD00516C7F /* ConsoleView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C911C71C47AF3A00516C7F /* EmeraldRunner.h */,
+				C2C911C81C47AF3A00516C7F /* EmeraldRunner.m */,
+				C2C911CA1C47AFEC00516C7F /* NSTask.h */,
+				C2C911C41C47A14300516C7F /* Console.h */,
+				C2C911C51C47A14300516C7F /* Console.m */,
+				C2C911C11C479D8E00516C7F /* ConsoleViewController.h */,
+				C2C911C21C479D8E00516C7F /* ConsoleViewController.m */,
+			);
+			name = ConsoleView;
+			sourceTree = "<group>";
+		};
+		C2C911E11C4F9CF700516C7F /* ConnectionInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C911D11C48FC2B00516C7F /* ConnectionInfoViewController.h */,
+				C2C911D21C48FC2B00516C7F /* ConnectionInfoViewController.m */,
+			);
+			name = ConnectionInfoView;
+			sourceTree = "<group>";
+		};
+		C2C911E21C4F9D0500516C7F /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C911CE1C47B86700516C7F /* MainViewController.h */,
+				C2C911CF1C47B86700516C7F /* MainViewController.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		C2C911E31C4F9D1900516C7F /* ChooseProgramView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C911E41C4F9D4000516C7F /* ChooseProgramViewController.h */,
+				C2C911E51C4F9D4000516C7F /* ChooseProgramViewController.m */,
+			);
+			name = ChooseProgramView;
+			sourceTree = "<group>";
+		};
 		C2C9C6921C4668340031F2DD = {
 			isa = PBXGroup;
 			children = (
@@ -93,22 +162,21 @@
 		C2C9C69D1C4668340031F2DD /* Emerald */ = {
 			isa = PBXGroup;
 			children = (
-				C2C911CE1C47B86700516C7F /* MainViewController.h */,
-				C2C911CF1C47B86700516C7F /* MainViewController.m */,
-				C2C911CA1C47AFEC00516C7F /* NSTask.h */,
-				C2C911C71C47AF3A00516C7F /* EmeraldRunner.h */,
-				C2C911C81C47AF3A00516C7F /* EmeraldRunner.m */,
-				C2C911C41C47A14300516C7F /* Console.h */,
-				C2C911C51C47A14300516C7F /* Console.m */,
-				C2C911C11C479D8E00516C7F /* ConsoleViewController.h */,
-				C2C911C21C479D8E00516C7F /* ConsoleViewController.m */,
+				C2C911E31C4F9D1900516C7F /* ChooseProgramView */,
+				C2C911E21C4F9D0500516C7F /* MainView */,
+				C2C911E11C4F9CF700516C7F /* ConnectionInfoView */,
+				C2C911E01C4F9CBD00516C7F /* ConsoleView */,
+				C2C911DF1C4D170E00516C7F /* CompileView */,
 				C2C9C6A21C4668340031F2DD /* AppDelegate.h */,
 				C2C9C6A31C4668340031F2DD /* AppDelegate.m */,
+				C2C911E71C4F9E1300516C7F /* Utilities.h */,
+				C2C911E81C4F9E1300516C7F /* Utilities.m */,
 				C2C9C6AB1C4668340031F2DD /* Main.storyboard */,
 				C2C9C6AE1C4668340031F2DD /* Images.xcassets */,
 				C2C9C6B01C4668340031F2DD /* LaunchScreen.xib */,
 				C2C9C6A51C4668340031F2DD /* Emerald.xcdatamodeld */,
 				C2C9C69E1C4668340031F2DD /* Supporting Files */,
+				C2C911DA1C4D15BE00516C7F /* CompileCell.xib */,
 			);
 			path = Emerald;
 			sourceTree = "<group>";
@@ -220,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2C9C6AD1C4668340031F2DD /* Main.storyboard in Resources */,
+				C2C911DB1C4D15BE00516C7F /* CompileCell.xib in Resources */,
 				C2C9C6B21C4668340031F2DD /* LaunchScreen.xib in Resources */,
 				C2C9C6AF1C4668340031F2DD /* Images.xcassets in Resources */,
 			);
@@ -242,9 +311,14 @@
 				C2C9C6A41C4668340031F2DD /* AppDelegate.m in Sources */,
 				C2C911C61C47A14300516C7F /* Console.m in Sources */,
 				C2C9C6A11C4668340031F2DD /* main.m in Sources */,
+				C2C911D61C4CF01A00516C7F /* CompilerTableViewController.m in Sources */,
+				C2C911E61C4F9D4000516C7F /* ChooseProgramViewController.m in Sources */,
 				C2C911C91C47AF3A00516C7F /* EmeraldRunner.m in Sources */,
+				C2C911D31C48FC2B00516C7F /* ConnectionInfoViewController.m in Sources */,
 				C2C911D01C47B86700516C7F /* MainViewController.m in Sources */,
+				C2C911DE1C4D170300516C7F /* CompileCellTableViewCell.m in Sources */,
 				C2C911C31C479D8E00516C7F /* ConsoleViewController.m in Sources */,
+				C2C911E91C4F9E1300516C7F /* Utilities.m in Sources */,
 				C2C9C6A71C4668340031F2DD /* Emerald.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
