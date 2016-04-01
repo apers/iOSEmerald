@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ConsoleViewController.h"
+#import "Utilities.h"
 
 @interface EmeraldRunner : NSObject
 - (void)initalize:(NSString *)host portNumber:(NSString *)port callbackObject:(ConsoleViewController *)callback program:(NSString *)program;

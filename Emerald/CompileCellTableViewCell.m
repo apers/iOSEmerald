@@ -13,6 +13,8 @@
 @property NSTask *task;
 - (void)compileDone;
 @end
+
+
 @implementation CompileCellTableViewCell
 
 - (void)awakeFromNib {
@@ -46,7 +48,7 @@
     
     
     
-    // Hide button
+    // Hide compile button
     self.compileButton.hidden = YES;
     
     // Show progress icon
@@ -58,6 +60,8 @@
     return YES;
 }
 
+
+// Called when the compilation task is done
 - (void)compileDone {
     int status = [self.task terminationStatus];
     
@@ -67,7 +71,8 @@
     if(status == 0) {
         [self.compileButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         self.compileButton.titleLabel.text = @"Success";
-    } else { // Failure
+    // Failure
+    } else {
         [self.compileButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         self.compileButton.titleLabel.text = @"Failure";
     }

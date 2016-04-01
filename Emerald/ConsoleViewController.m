@@ -38,15 +38,14 @@
     // Clear console
     [self.console clear];
 
-    // Initalize runner
-    // Check if we have connection info
+    // Initalize runner and check if we have connection info
     if (self.connectionInfo != nil) {
-        NSLog(@"%@:%@", self.connectionInfo[0], self.connectionInfo[1]);
         [self.runner initalize:self.connectionInfo[0] portNumber:self.connectionInfo[1] callbackObject:self program:self.program];
     } else {
         [self.runner initalize:@"" portNumber:@"" callbackObject:self program:self.program];
     }
     [self.runner run];
+    
     // Append ip to console
     [self.console append:[NSString stringWithFormat:@"Running with IP: %@\n", Utilities.getIPAddress]];
 }
@@ -57,9 +56,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+// This method is called when the Emerald task has recieved output
 -(void) notifiedForOutput: (NSNotification *)notified
 {
-    //self.console.scrollEnabled = NO;
     // Get data
     NSData * data = [[notified userInfo] valueForKey:NSFileHandleNotificationDataItem];
     
@@ -73,6 +72,8 @@
         // Keep listening
         [self.runner.output readInBackgroundAndNotify];
     }
+    
+    // Workaround to get smooth scrolling 
     [self.console scrollRangeToVisible:NSMakeRange(self.console.text.length-1, 1)];
     self.console.scrollEnabled = NO;
     self.console.scrollEnabled = YES;

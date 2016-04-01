@@ -12,4 +12,8 @@
 + (NSArray*)getDocumentsFileList;
 + (NSArray*)getDocumentsFileListByFileExtention:(NSString *)fileExtention;
 + (NSString *)getIPAddress;
++ (NSString*)getEmeraldRoot;
++ (NSString*)getEmeraldEmx;
++ (NSString*)getEmeraldEmc;
++ (void)setEmeraldEnv;
 @end

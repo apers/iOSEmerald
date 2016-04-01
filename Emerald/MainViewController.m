@@ -16,15 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    BOOL exists = [[NSFileManager defaultManager] fileExistsAtPath:@"/bin/emx"];
-     
-     
+    
+    // Set the emerald enviroment variables
+    [Utilities setEmeraldEnv];
+    
+    NSLog(@"PATH: %@", [Utilities getEmeraldEmx]);
+    BOOL exists = [[NSFileManager defaultManager] isExecutableFileAtPath:[Utilities getEmeraldEmx]];
+    
      if (!exists) {
-         NSLog(@"Does not exist!");
+         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Permission" message:[NSString stringWithFormat:@"%@%@",@"Could not locate Emerald binary at: ", [Utilities getEmeraldEmx]] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+         [alert show];
      } else {
-         NSLog(@"Exists!");
+         NSLog(@"Emerald binary found!");
      }
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

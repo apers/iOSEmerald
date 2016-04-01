@@ -10,7 +10,6 @@
 
 @implementation Console
 - (void)write:(NSString *)text {
-    //self.clearsContextBeforeDrawing = YES;
     // To avoid resetting text formatting and losing text color
     if (![self isSelectable]) {
         self.selectable = YES;
@@ -18,7 +17,8 @@
     
     // Disable self scroll and set text
     self.text = text;
-    // To avoid resetting text formatting and losing text color
+    
+    // Workaround to avoid resetting text formatting and losing text color
     if (![self isSelectable]) {
         self.selectable = NO;
     }

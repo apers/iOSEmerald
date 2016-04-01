@@ -52,7 +52,7 @@
     [self.task setStandardOutput:self.outputPipe];
     
     // Set binary to launch (emx)
-    self.task.launchPath = @"/bin/emx";
+    self.task.launchPath = [Utilities getEmeraldEmx];
     
     // Set arguments
     if(![self.program  isEqual: @""]) {
@@ -74,13 +74,9 @@
 - (void) run {
     // Launch emerald
     [self.task launch];
-    
-    // Wait for exit or comment out for async running
-    // [self.task waitUntilExit];
 }
-
+// Kill the current session. Called when seguing out of the view
 - (void) stop {
-    // Kill the current session
     kill([self.task processIdentifier], SIGTERM);
     [self.task waitUntilExit];
 }

@@ -10,17 +10,20 @@
 #include <arpa/inet.h>
 #import "Utilities.h"
 
+@import UIKit;
+
 @implementation Utilities
+
+// Returns an array of the files in the documents folder
 + (NSArray*)getDocumentsFileList {
+    
     // Find URL of documents folder
     NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     
     NSString *documentsUrl = [url path];
     
-    
-    
     if(documentsUrl == nil) {
-        NSLog(@"omg why im nil");
+        NSLog(@"Documents url is nil. Utilities.m:24");
     } else {
         NSLog(@"%@", documentsUrl);
     }
@@ -42,16 +45,18 @@
     return [completePathArray copy];
 }
 
+
+// Returns an array of the files in the documents folder with a given extention
 + (NSArray*)getDocumentsFileListByFileExtention:(NSString *)fileExtention {
     // Find URL of documents folder
     NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     
     NSString *documentsUrl = [url path];
     
-    
+    NSLog(@"%@", documentsUrl);
     
     if(documentsUrl == nil) {
-        NSLog(@"omg why im nil");
+        NSLog(@"Documents url nil Utilities.m:59");
     } else {
         NSLog(@"%@", documentsUrl);
     }
@@ -59,6 +64,9 @@
     // Get list of files
     NSFileManager *fileman = [NSFileManager defaultManager];
     NSArray *files = [fileman contentsOfDirectoryAtPath:documentsUrl error:nil];
+    
+    
+    // Filter files by file extention
     NSArray *filesWithExtention = [files filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:[NSString stringWithFormat:@"self ENDSWITH '%@'",  fileExtention]]];
     
     NSMutableArray *completePathArray = [[NSMutableArray alloc] init];
@@ -74,6 +82,7 @@
     return [completePathArray copy];
 }
 
+// Returns the ip-address of en0 as a string
 + (NSString *)getIPAddress {
     
     NSString *address = @"error";
@@ -104,6 +113,27 @@
     return address;
     
 }
+
++ (NSString*)getEmeraldRoot {
+    return @"/";
+}
+
++ (NSString*)getEmeraldEmx {
+    return [NSString stringWithFormat:@"%@%@", [Utilities getEmeraldRoot], @"bin/emx"];
+}
++ (NSString*)getEmeraldEmc {
+    return [NSString stringWithFormat:@"%@%@", [Utilities getEmeraldRoot], @"bin/emc"];
+}
+
+
+// Sets the emerald enviroment variable (not needed if its installed to /)
++ (void)setEmeraldEnv {
+    NSString *key = @"EMERALDROOT";
+    NSString *value = [Utilities getEmeraldRoot];
+    setenv([key UTF8String], [value UTF8String], 1);
+}
+
+
 @end
 
 

@@ -18,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
+    
+    // Get all emerald source files from the documents folder
     self.emeraldFiles = [Utilities getDocumentsFileListByFileExtention:@".m"];
     
     for (NSArray *arr in self.emeraldFiles) {
