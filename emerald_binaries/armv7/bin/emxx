@@ -1,2 +1,0 @@
-#!/bin/sh
-emx -B $EMERALDROOT/lib/Builtins -Ttrans=2 -x $*
